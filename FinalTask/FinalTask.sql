@@ -27,7 +27,7 @@
 --Откинул пользователей, которые не указали город
 --select users.geo, max(log.bet) as MaxStake from log join users on users.user_id = log.user_id where users.geo != ''
 --group by users.geo
---order by -sum(log.bet)
+--order by -MaxStake
 
 
 --8(f)
